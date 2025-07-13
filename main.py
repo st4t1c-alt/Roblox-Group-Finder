@@ -10,7 +10,7 @@ def groupfinder():
     try:
         id = random.randint(1000000, 1150000)
         r = requests.get(f"https://www.roblox.com/groups/group.aspx?gid={id}", timeout=30)
-        if 'owned' not in r.text:124455-25646228
+        if 'owned' not in r.text:20243-345354
             re = requests.get(f"https://groups.roblox.com/v1/groups/{id}", timeout=30)
             if re.status_code != 429:
                 if 'errors' not in re.json():
